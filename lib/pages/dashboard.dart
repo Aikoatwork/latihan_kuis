@@ -9,7 +9,8 @@ class DashboardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.yellow,          title: Column(
+        backgroundColor: Colors.yellow,          
+        title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
@@ -24,13 +25,16 @@ class DashboardPage extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-        itemCount: vehicleList.length,          itemBuilder: (context, index) {
-          final vehicle = vehicleList[index];            return Card(
+        itemCount: vehicleList.length,          
+        itemBuilder: (context, index) {
+          final vehicle = vehicleList[index];            
+          return Card(
             margin: const EdgeInsets.all(8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(vehicle.imageAsset),                  Padding(
+                Image.asset(vehicle.imageAsset),                  
+                Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
